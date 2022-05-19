@@ -47,6 +47,10 @@ article{
     margin-bottom: 50px;
     
 }
+#frame{
+    max-width: 95%;
+    height: auto;
+}
 #title{
     font-size: 24px;
     font-weight: bold;
