@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>posExhibition</title>
+</head>
+<body class="container">
+    <div style = "text-align :center;" onclick="window.location.reload();">
+        <img id="logo" src="logo.png">
+        <hr>
+    </div>
+    <article class="start">
+        <div class="posTitle">
+            <p>제 1회 별조각 사진전시회</p>
+            <p id="posExplain">별조각 사진전시회에 오신 것을 환영합니다.<br> 해당 사진을 클릭하면 사진 제목 및 설명을 보실수 있습니다.</p>
+        </div>
+        <div class="section" onclick="toDetail(1);">
+            <img id="frame" src="gold.png" style="max-width: 80%;height: auto;">
+            <p id="fRank">1등 000</p>
+        </div>
+        <div class="section" onclick="toDetail(2);">
+            <img id="frame" src="gold.png" style="max-width: 80%;height: auto;">
+            <p id="fRank">2등 000</p>
+        </div>
+        <div class="section" onclick="toDetail(3);">
+            <img id="frame" src="gold.png" style="max-width: 80%;height: auto;">
+            <p id="fRank">3등 000</p>
+        </div>
+    </article>
+    <article class="detail">
+        <div class="dCenter">
+            <p id="rank">순위</p>
+            <img id="img" src="gold.png" style="max-width: 80%;height: auto;">
+        </div>
+        <p id="title">사진 제목</p>
+        <p id="explain">사진 설명</p>
+        <button id="difBtn" type="button" class="btn btn-secondary pt-3 pb-3"  onclick="window.location.reload();">다른 작품도 보러가기</button>
+    </article>
+    <footer>
+        <hr style="rgb(0, 0, 0);">
+        <br>
+        <p>Develop by 별조각 임원진</p>
+    </footer>
+    <input type="hidden" id="r" value="0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script>
+        var p={
+            1:{"rank":"1등 00학번 000", "img":"gold.png", "title":"밤하늘에 떠있는 달", "explain":"20 22 PSY Coming back (이리 오너라) Long time no see huh? 오래간만이지 huh? 우리 다시 웃고 울고 지지고 볶고 Let's get loco Pandemic's over uh 그래 기분이 오져 uh 다시 그분이 오죠 uh Everybody say 뻑적지근해 걸쩍지근해 시끌벅적거리네 너무 좋아 북적거리네 동서남북 Aye 강남강북 Aye 싹 다 모여 Throw yo hands in the air"},
+            2:{"rank":"2등 00학번 000", "img":"gold.png", "title":"제목2", "explain":"설명2"},
+            3:{"rank":"3등 00학번 000", "img":"gold.png", "title":"제목3", "explain":"설명3"}
+        }
+        function toDetail(i){
+            $(".start").hide();
+            $(".detail").show();
+            next(i);
+        }
+        function next(i){
+            $("#rank").html(p[i]["rank"]);
+            $("#img").attr("src",p[i]["img"]);
+            $("#title").html(p[i]["title"]);
+            $("#explain").html(p[i]["explain"]);
+        }
+    </script>
+</body>
+</html>

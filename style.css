@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
 
+
+#logo{
+    width: 20%;
+    height: 20%;
+    margin-top: 10px;
+}
+
 article{
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
 
 .detail{
@@ -10,7 +18,6 @@ article{
     font-family: 'Gowun Dodum', sans-serif;
 }
 .posTitle{
-    margin-top: 50px;
     font-family: 'Do Hyeon', sans-serif;
     font-size: 32px;
     font-weight: bold;
@@ -21,17 +28,26 @@ article{
 }
 
 .section{
-    margin-top: 70px;
+    margin-top: 80px;
+    text-align: center;
 }
 
 #fRank{
-    font-family: 'Gowun Dodum', sans-serif;
-    font-size: 24px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 30px;
+    margin-top: 30px;
 }
 
+.dCenter{
+    text-align: center;
+    margin-bottom: 50px;
+}
 #rank{
-    font-size: 24px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 30px;
     font-weight: bold;
+    margin-bottom: 50px;
+    
 }
 #title{
     font-size: 24px;
@@ -39,4 +55,15 @@ article{
 }
 #explain{
     font-size: 18px;
+}
+#difBtn{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+footer{
+    font-family: 'Gowun Dodum', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 80px;
+    padding-bottom: 30px;
 }
