@@ -20,7 +20,6 @@ article{
 .posTitle{
     font-family: 'Do Hyeon', sans-serif;
     font-size: 32px;
-    font-weight: bold;
 }
 #posExplain{
     font-size: 18px;
@@ -45,7 +44,6 @@ article{
 #rank{
     font-family: 'Do Hyeon', sans-serif;
     font-size: 30px;
-    font-weight: bold;
     margin-bottom: 50px;
     
 }
