@@ -12,6 +12,7 @@
 
 .content{
     position: absolute;
+    width: max-content;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -22,7 +23,7 @@
 }
 
 #go{
-    margin-top: 20px;
+    margin-top: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
